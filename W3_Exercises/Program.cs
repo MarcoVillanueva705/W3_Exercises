@@ -37,6 +37,20 @@ namespace W3_Exercises
             int d = 5, e = 10, f = 2;
             Console.WriteLine(d + e + f);
 
+            //Implicit casting is done automatically when passing a smaller size type to a larger size type:
+
+            int myInt = 9;
+            double myDouble = myInt;//automatic casting, int to double
+            Console.WriteLine(myDouble);//outputs 9
+
+            //Explicit casting must be done manually by placing the type in parentheses in front of the value:
+
+            double myDoubles = 9.78;
+            int myInts = (int)myDoubles;//manual casting; double to int
+            Console.WriteLine(myInts);//outputs 9
+
+
+
         }
     }
 }
