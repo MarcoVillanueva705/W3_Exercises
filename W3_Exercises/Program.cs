@@ -49,8 +49,18 @@ namespace W3_Exercises
             int myInts = (int)myDoubles;//manual casting; double to int
             Console.WriteLine(myInts);//outputs 9
 
+            //Type Conversion Methods
+            //It is also possible to convert data types explicitly by using built -in methods, such as Convert.ToBoolean,
+            //Convert.ToDouble, Convert.ToString, Convert.ToInt32 (int) and Convert.ToInt64 (long):
 
+            int thisInt = 8;
+            double thisDouble = 8.98;
+            bool myBool = false;
 
+            Console.WriteLine(Convert.ToString(thisInt));
+            Console.WriteLine(Convert.ToDouble(thisInt));
+            Console.WriteLine(Convert.ToInt32(thisDouble));
+            Console.WriteLine(Convert.ToInt32(myBool));
         }
     }
 }
